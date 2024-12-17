@@ -23,7 +23,7 @@ while True:
 
         #abre o arquivo e pega o tamanho
         fileSize = os.path.getsize(filePath)
-        sock.sendto(str(fileSize).encode('utf-8'), source)  # Envia o tamanho do arquivo
+        sock.sendto(str(fileSize).encode('utf-8'), source)  #envia o tamanho do arquivo
 
         #lê o conteúdo do arquivo 
         with open(filePath, 'rb') as fd:
